@@ -204,6 +204,84 @@ class MainController extends GetxController {
   var categoriesDataThree = [
     {
       "isSelected": false,
+      "name": "Dogs",
+      'category': "Mammals",
+      'image': "assets/images/dogs.jpg"
+    },
+    {
+      "isSelected": false,
+      "name": "Cats",
+      'category': "Mammals",
+      'image': "assets/images/cats.jpg"
+    },
+    {
+      "isSelected": false,
+      "name": "Horses",
+      'category': "Mammals",
+      'image': "assets/images/horse.jpg"
+    },
+    {
+      "isSelected": false,
+      "name": "Monkey",
+      'category': "Mammals",
+      'image': "assets/images/monkey.jpg"
+    },
+    {
+      "isSelected": false,
+      "name": "Bears",
+      'category': "Mammals",
+      'image': "assets/images/bear.jpg"
+    },
+    {
+      "isSelected": false,
+      "name": "Kangaroos",
+      'category': "Mammals",
+      'image': "assets/images/kangro.jpg"
+    },
+    {
+      "isSelected": false,
+      "name": "Camels",
+      'category': "Mammals",
+      'image': "assets/images/camel.jpg"
+    },
+    {
+      "isSelected": false,
+      "name": "Dolphins",
+      'category': "Mammals",
+      'image': "assets/images/dolphin.jpg"
+    },
+    {
+      "isSelected": false,
+      "name": "Sloths",
+      'category': "Mammals",
+      'image': "assets/images/dolphin.jpg"
+    },
+    {
+      "isSelected": false,
+      "name": "Lions",
+      'category': "Mammals",
+      'image': "assets/images/dolphin.jpg"
+    },
+    {
+      "isSelected": false,
+      "name": "Tigers",
+      'category': "Mammals",
+      'image': "assets/images/tiger.jpg"
+    },
+    {
+      "isSelected": false,
+      "name": "Pigs",
+      'category': "Mammals",
+      'image': "assets/images/pigs.jpg"
+    },
+    {
+      "isSelected": false,
+      "name": "Giraffes",
+      'category': "Mammals",
+      'image': "assets/images/giraafe.jpg"
+    },
+    {
+      "isSelected": false,
       "name": "Comedy",
       'category': "Actor/Actresses",
       'image': "assets/images/Comedy.jpg"

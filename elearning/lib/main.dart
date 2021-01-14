@@ -8,6 +8,7 @@ import 'package:get/get.dart';
 import 'Screens/Login/components/thirdpage.dart';
 import 'package:elearning/Screens/Welcome/components/Animation.dart';
 import 'package:elearning/Screens/Login/components/HomeScreenFav.dart';
+import 'package:elearning/Screens/Login/components/RoadMap.dart';
 // import 'package:elearning/Screens/Login/components/HomeScreenKatherine.dart';
 
 void main() => runApp(MyApp());
@@ -17,21 +18,26 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Flutter Auth',
-        theme: ThemeData(
-          primaryColor: kPrimaryColor,
-          scaffoldBackgroundColor: Colors.white,
-        ),
-        // home: WelcomeScreen(),
-        // home: HomeScreen(),
-        // home: HomeScreen(),
-        home: HomeScreenFav()
-        // home: Animations(),
-        // home: SubCategory(),
-        // home: BottomNav(),
-        // home: Grid(),
-        );
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Auth',
+      theme: ThemeData(
+        primaryColor: kPrimaryColor,
+        scaffoldBackgroundColor: Colors.white,
+      ),
+      // home: WelcomeScreen(),
+      // home: HomeScreen(),
+      // home: HomeScreen(),
+      home: roadMap(),
+/* -------------------------------------------------------------------------- */
+/*                                    start                                   */
+/* -------------------------------------------------------------------------- */
+
+      // home: HomeScreenFav(),
+      // home: Animations(),
+      // home: SubCategory(),
+      // home: BottomNav(),
+      // home: Grid(),
+    );
   }
 }
 

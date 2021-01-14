@@ -221,12 +221,12 @@ class _SubCategoryNewState extends State<SubCategoryNew> {
               ),
               Divider(),
               Positioned(
-                top: 360,
+                top: 320,
                 left: 0,
                 right: 0,
-                bottom: 80,
+                bottom: 5,
                 child: Container(
-                  height: 800,
+                  height: 1000,
                   // width: double.infinity,
                   child:
 
@@ -330,7 +330,7 @@ class _SubCategoryNewState extends State<SubCategoryNew> {
                                             // "assets/images/business.png"
                                             _.showSubCategoryModel[index]
                                                 .image),
-                                        fit: BoxFit.fill,
+                                        fit: BoxFit.cover,
                                       ),
                                     ),
                                     child: Column(
