@@ -373,6 +373,30 @@ class MainController extends GetxController {
       'image': "assets/images/athelete1.jpg",
       "isSelected": false,
     },
+    {
+      "name": "Mammals",
+      'heading': "Animals",
+      'image': "assets/images/mammals.jpg",
+      "isSelected": false,
+    },
+    {
+      "name": "Reptiles",
+      'heading': "Animals",
+      'image': "assets/images/reptile.jpg",
+      "isSelected": false,
+    },
+    {
+      "name": "Fishes",
+      'heading': "Animals",
+      'image': "assets/images/fishes.jpg",
+      "isSelected": false,
+    },
+    {
+      "name": "Amphibians",
+      'heading': "Animals",
+      'image': "assets/images/amphabians.jpg",
+      "isSelected": false,
+    },
   ];
   //heading
   var categoriesData = [
@@ -395,7 +419,7 @@ class MainController extends GetxController {
       'image': "assets/images/photography.png"
     },
     {
-      "name": "Business",
+      "name": "Animals",
       'courses': "17",
       'image': "assets/images/business.png",
       "isSelected": false,
