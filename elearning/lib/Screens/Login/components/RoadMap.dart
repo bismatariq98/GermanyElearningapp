@@ -87,7 +87,7 @@ class _roadMapState extends State<roadMap> {
                           padding: const EdgeInsets.symmetric(
                               vertical: 20.0, horizontal: 20.0),
                           child: Container(
-                            height: 250,
+                            height: 300,
                             width: 200,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(40),
@@ -240,6 +240,75 @@ class _roadMapState extends State<roadMap> {
                                         ),
                                       ),
                                     ],
+                                  ),
+                                ),
+                                Positioned(
+                                  top: 230,
+                                  left: 50,
+                                  child: Container(
+                                    height: 90,
+                                    width: 275,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(25),
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.black,
+                                          blurRadius: 1.0,
+                                          spreadRadius: 3.0,
+
+                                          offset: Offset(6.0,
+                                              2.0), // shadow direction: bottom right
+                                        )
+                                      ],
+                                    ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 20.0),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        children: [
+                                          Row(
+                                            children: [
+                                              IconButton(
+                                                  icon: Icon(
+                                                    Icons.favorite,
+                                                    color: Colors.red,
+                                                  ),
+                                                  onPressed: () {}),
+                                              Text(
+                                                "120.2",
+                                                style: TextStyle(
+                                                    color: Colors.black),
+                                              ),
+                                            ],
+                                          ),
+                                          Row(
+                                            children: [
+                                              IconButton(
+                                                  icon: Icon(
+                                                    Icons.favorite,
+                                                    color: Colors.red,
+                                                  ),
+                                                  onPressed: () {}),
+                                              Text("120.2"),
+                                            ],
+                                          ),
+                                          Row(
+                                            children: [
+                                              IconButton(
+                                                  icon: Icon(
+                                                    Icons.favorite,
+                                                    color: Colors.red,
+                                                  ),
+                                                  onPressed: () {}),
+                                              Text("120.2"),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                    ),
                                   ),
                                 ),
                               ],
