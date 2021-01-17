@@ -17,6 +17,7 @@ class _HomeScreenTwoState extends State<HomeScreenTwo>
   void initState() {
     super.initState();
     animation = AnimationController(
+      vsync: this,
       duration: Duration(seconds: 3),
     );
     _fadeInFadeOut = Tween<double>(begin: 0.0, end: 0.9).animate(animation);

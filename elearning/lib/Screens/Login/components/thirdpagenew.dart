@@ -1,13 +1,10 @@
-import 'package:elearning/Screens/Login/components/SubCategoryTwo.dart';
-import 'package:elearning/main.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+
 import 'package:elearning/controller/mainController.dart';
 import '../../../constants.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:elearning/Screens/Login/components/SubCatTry.dart';
 
 class SubCategoryNew extends StatefulWidget {
   @override

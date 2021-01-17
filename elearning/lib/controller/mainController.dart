@@ -475,6 +475,36 @@ class MainController extends GetxController {
       'image': "assets/images/amphabians.jpg",
       "isSelected": false,
     },
+    {
+      "name": "Africa",
+      'heading': "Travelling",
+      'image': "assets/images/amphabians.jpg",
+      "isSelected": false,
+    },
+    {
+      "name": "Asia",
+      'heading': "Travelling",
+      'image': "assets/images/amphabians.jpg",
+      "isSelected": false,
+    },
+    {
+      "name": "Australia",
+      'heading': "Travelling",
+      'image': "assets/images/amphabians.jpg",
+      "isSelected": false,
+    },
+    {
+      "name": "Europe",
+      'heading': "Travelling",
+      'image': "assets/images/amphabians.jpg",
+      "isSelected": false,
+    },
+    {
+      "name": "America",
+      'heading': "Travelling",
+      'image': "assets/images/amphabians.jpg",
+      "isSelected": false,
+    },
   ];
   //heading
   var categoriesData = [
@@ -492,12 +522,30 @@ class MainController extends GetxController {
     },
     {
       "isSelected": false,
-      "name": "Photography",
+      "name": "History",
       'courses': "13",
       'image': "assets/images/photography.png"
     },
     {
       "name": "Animals",
+      'courses': "17",
+      'image': "assets/images/business.png",
+      "isSelected": false,
+    },
+    {
+      "name": "Travelling",
+      'courses': "17",
+      'image': "assets/images/business.png",
+      "isSelected": false,
+    },
+    {
+      "name": "Food",
+      'courses': "17",
+      'image': "assets/images/business.png",
+      "isSelected": false,
+    },
+    {
+      "name": "Science & Technology",
       'courses': "17",
       'image': "assets/images/business.png",
       "isSelected": false,

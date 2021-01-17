@@ -9,6 +9,7 @@ import 'Screens/Login/components/thirdpage.dart';
 import 'package:elearning/Screens/Welcome/components/Animation.dart';
 import 'package:elearning/Screens/Login/components/HomeScreenFav.dart';
 import 'package:elearning/Screens/Login/components/RoadMap.dart';
+import 'package:elearning/Screens/Login/components/RoadMapNew.dart';
 // import 'package:elearning/Screens/Login/components/HomeScreenKatherine.dart';
 
 void main() => runApp(MyApp());
@@ -27,12 +28,13 @@ class MyApp extends StatelessWidget {
       // home: WelcomeScreen(),
       // home: HomeScreen(),
       // home: HomeScreen(),
-      home: roadMap(),
+      // home: roadMap(),
+      // home: roadMapNew(),
 /* -------------------------------------------------------------------------- */
 /*                                    start                                   */
 /* -------------------------------------------------------------------------- */
 
-      // home: HomeScreenFav(),
+      home: HomeScreenFav(),
       // home: Animations(),
       // home: SubCategory(),
       // home: BottomNav(),
