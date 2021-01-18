@@ -2,7 +2,7 @@ import 'package:elearning/main.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:elearning/components/List.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+
 import 'package:elearning/controller/mainController.dart';
 
 class roadMapNew extends StatefulWidget {
@@ -86,13 +86,18 @@ class _roadMapNewState extends State<roadMapNew> {
                     Padding(
                       padding:
                           // EdgeInsets.symmetric(horizontal: 50),
-                          EdgeInsets.only(left: 20, top: 80, right: 20),
+                          EdgeInsets.only(
+                        left: 20,
+                        top: 80,
+                      ),
                       child: Container(
                           // margin: EdgeInsets.symmetric(horizontal: 12),
                           height: 70,
                           // width: 350,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(33),
+                            borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(20),
+                                bottomLeft: Radius.circular(20)),
                             color: Color(0xFF3C3C3C),
                             // Color(0xFFF8F1F0)
                           ),

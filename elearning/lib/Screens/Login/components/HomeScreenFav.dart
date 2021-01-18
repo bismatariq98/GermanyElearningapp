@@ -58,7 +58,7 @@ class _HomeScreenFavState extends State<HomeScreenFav> {
               Positioned(
                 top: 0,
                 child: Container(
-                  height: 150,
+                  height: 180,
                   width: Get.width,
                   decoration: BoxDecoration(
                     // color: Color(0xFFFFAB00),
@@ -71,16 +71,50 @@ class _HomeScreenFavState extends State<HomeScreenFav> {
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Padding(
-                        padding: EdgeInsets.only(top: 30),
-                        child: Text(
-                          "Choose atleast one Intrests",
-                          style: TextStyle(
-                              fontSize: 29,
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold),
-                        ),
+                      Row(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.only(top: 25, left: 30),
+                            child: Container(
+                              width: 170,
+                              child: Text(
+                                "Choose Intrests",
+                                style: TextStyle(
+                                    fontSize: 35,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 50.0, top: 12),
+                            child: Container(
+                              width: 150,
+                              decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(20)),
+                              child: Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(2.0),
+                                    child: Text(
+                                      "Continue",
+                                      style: TextStyle(
+                                          fontSize: 24,
+                                          color: Color(0xFF0F278E)),
+                                    ),
+                                  ),
+                                  IconButton(
+                                    icon: Icon(Icons.arrow_forward),
+                                    onPressed: () {},
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                       SizedBox(
                         height: 18,
@@ -90,11 +124,61 @@ class _HomeScreenFavState extends State<HomeScreenFav> {
                 ),
               ),
               Positioned(
-                top: 120,
-                left: 60,
-                child: Container(
-                  height: 35,
-                  width: 240,
+                top: 150,
+                left: 100,
+                child: Text(
+                  "Choose One Intrest",
+                  style: TextStyle(color: Colors.white, fontSize: 25),
+                ),
+                //  Container(
+                //   height: 35,
+                //   width: 240,
+                //   decoration: BoxDecoration(
+                //       boxShadow: [
+                //         BoxShadow(
+                //           color: Colors.grey,
+                //           offset: Offset(0.0, 1.0), //(x,y)
+                //           blurRadius: 6.0,
+                //         ),
+                //       ],
+                //       color: Colors.white,
+                //       borderRadius: BorderRadius.circular(30)),
+                //   child:
+                //   TextFormField(
+                //     onChanged: (value) {
+                //       setState(() {
+                //         searchedText = value;
+                //       });
+                //     },
+                //     decoration: InputDecoration(
+                //         contentPadding: EdgeInsets.only(left: 10),
+                //         fillColor: Colors.white,
+                //         border: InputBorder.none,
+                //         suffixIcon: Container(
+                //           margin: EdgeInsets.all(4),
+                //           decoration: BoxDecoration(
+                //               shape: BoxShape.circle, color: Color(0XFF0F278E)),
+                //           child: Icon(
+                //             Icons.search,
+                //             color: Colors.white,
+                //           ),
+                //         ),
+                //         hintText: "Type too Search..."),
+                //   ),
+                // ),
+              ),
+
+              Positioned(
+                top: 190,
+                left: 20,
+                child:
+                    // Text(
+                    //   "Choose One Intrest",
+                    //   style: TextStyle(color: Colors.white, fontSize: 25),
+                    // ),
+                    Container(
+                  height: 45,
+                  width: 380,
                   decoration: BoxDecoration(
                       boxShadow: [
                         BoxShadow(
@@ -103,31 +187,41 @@ class _HomeScreenFavState extends State<HomeScreenFav> {
                           blurRadius: 6.0,
                         ),
                       ],
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(30)),
-                  child: TextFormField(
-                    onChanged: (value) {
-                      setState(() {
-                        searchedText = value;
-                      });
-                    },
-                    decoration: InputDecoration(
-                        contentPadding: EdgeInsets.only(left: 10),
-                        fillColor: Colors.white,
-                        border: InputBorder.none,
-                        suffixIcon: Container(
-                          margin: EdgeInsets.all(4),
-                          decoration: BoxDecoration(
-                              shape: BoxShape.circle, color: Color(0XFF0F278E)),
-                          child: Icon(
+                      color: Color(0xFF0F278E),
+                      borderRadius: BorderRadius.circular(15)),
+                  child: Padding(
+                    padding: const EdgeInsets.all(5.0),
+                    child: TextFormField(
+                      onChanged: (value) {
+                        setState(() {
+                          searchedText = value;
+                        });
+                      },
+                      decoration: InputDecoration(
+                          prefixIcon: Icon(
                             Icons.search,
                             color: Colors.white,
                           ),
-                        ),
-                        hintText: "Type too Search..."),
+                          contentPadding: EdgeInsets.only(left: 10),
+                          fillColor: Colors.white,
+                          border: InputBorder.none,
+                          // suffixIcon: Container(
+                          //   margin: EdgeInsets.all(4),
+                          //   decoration: BoxDecoration(
+                          //       shape: BoxShape.circle,
+                          //       color: Color(0XFF0F278E)),
+                          //   child: Icon(
+                          //     Icons.search,
+                          //     color: Colors.white,
+                          //   ),
+                          // ),
+                          hintText: "Type too Search...",
+                          hintStyle: TextStyle(color: Colors.white)),
+                    ),
                   ),
                 ),
               ),
+
               // Positioned(
               //   top: 120,
               //   left: 300,
