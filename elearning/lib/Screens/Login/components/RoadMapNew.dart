@@ -96,9 +96,10 @@ class _roadMapNewState extends State<roadMapNew> {
                           // width: 350,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(20),
-                                bottomLeft: Radius.circular(20)),
-                            color: Color(0xFF3C3C3C),
+                                topLeft: Radius.circular(35),
+                                bottomLeft: Radius.circular(35)),
+                            color: Color(0xFFF3F4F6),
+                            // Color(0xFF3C3C3C),
                             // Color(0xFFF8F1F0)
                           ),
                           child: Padding(
@@ -134,20 +135,23 @@ class _roadMapNewState extends State<roadMapNew> {
                                             isSelected == index
                                                 ? BoxShadow(
                                                     color: Colors.grey,
-                                                    spreadRadius: 1,
-                                                    blurRadius: 1,
+                                                    spreadRadius: 0,
+                                                    blurRadius: 0,
                                                     offset: Offset(0,
-                                                        1), // changes position of shadow
+                                                        3), // changes position of shadow
                                                   )
                                                 : BoxShadow(
                                                     color: Colors.transparent)
                                           ],
                                           color: isSelected == index
-                                              ? Color(0xFFF3F3F3)
-                                              : Color(0xFF3C3C3C),
+                                              ? Colors.white
+                                              // Color(0xFFF3F3F3)
+
+                                              : Color(0xFFF3F4F6),
+                                          //  Color(0xFF3C3C3C),
                                           // Color(0xFFF8F1F0),
                                           borderRadius:
-                                              BorderRadius.circular(30),
+                                              BorderRadius.circular(25),
                                           // image: DecorationImage(
                                           //   image: AssetImage(_
                                           //       .selectedCategory [index]
@@ -163,8 +167,9 @@ class _roadMapNewState extends State<roadMapNew> {
                                               style: TextStyle(
                                                   color: isSelected == index
                                                       ? Colors.black
-                                                      : Colors.white,
-                                                  //  Colors.black,
+                                                      :
+                                                      // Colors.white,
+                                                      Colors.black,
                                                   fontWeight: FontWeight.bold,
                                                   fontSize: 17),
                                               //  kTitleTextStyle,

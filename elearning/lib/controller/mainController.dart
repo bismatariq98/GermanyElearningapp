@@ -179,6 +179,7 @@ class MainController extends GetxController {
               isSelected: subCategory[i].isSelected ? false : true,
               heading: subCategory[i].heading)
         ]);
+        updateSelectionContinue();
         update();
       }
     }
@@ -186,6 +187,18 @@ class MainController extends GetxController {
 /* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
+/* -------------------------------------------------------------------------- */
+/*                              update selection                              */
+/* -------------------------------------------------------------------------- */
+  bool isContinueSelection = false;
+  updateSelectionContinue() {
+    if (userCategory.length != 0) {
+      isContinueSelection = true;
+      // update();
+    } else {
+      isContinueSelection = false;
+    }
+  }
 /* -------------------------------------------------------------------------- */
 /*                                load headings                               */
 /* -------------------------------------------------------------------------- */
@@ -478,31 +491,91 @@ class MainController extends GetxController {
     {
       "name": "Africa",
       'heading': "Travelling",
-      'image': "assets/images/amphabians.jpg",
+      'image': "assets/images/africatravel.jpg",
       "isSelected": false,
     },
     {
       "name": "Asia",
       'heading': "Travelling",
-      'image': "assets/images/amphabians.jpg",
+      'image': "assets/images/asiatravelling.jpg",
       "isSelected": false,
     },
     {
       "name": "Australia",
       'heading': "Travelling",
-      'image': "assets/images/amphabians.jpg",
+      'image': "assets/images/austrlia travelling.jpg",
       "isSelected": false,
     },
     {
       "name": "Europe",
       'heading': "Travelling",
-      'image': "assets/images/amphabians.jpg",
+      'image': "assets/images/europe travelling.jpg",
       "isSelected": false,
     },
     {
       "name": "America",
       'heading': "Travelling",
-      'image': "assets/images/amphabians.jpg",
+      'image': "assets/images/americantravelling.jpg",
+      "isSelected": false,
+    },
+    {
+      "name": "Asia",
+      'heading': "History",
+      'image': "assets/images/asianhistory.jpg",
+      "isSelected": false,
+    },
+    {
+      "name": "Australia",
+      'heading': "History",
+      'image': "assets/images/austrialianhistory.jpg",
+      "isSelected": false,
+    },
+    {
+      "name": "Europe",
+      'heading': "History",
+      'image': "assets/images/europeanHistroy.jpg",
+      "isSelected": false,
+    },
+    {
+      "name": "America",
+      'heading': "History",
+      'image': "assets/images/americanHistory.jpg",
+      "isSelected": false,
+    },
+    {
+      "name": "Asia",
+      'heading': "Food",
+      'image': "assets/images/asainfood.jpg",
+      "isSelected": false,
+    },
+    {
+      "name": "Australia",
+      'heading': "Food",
+      'image': "assets/images/autrialnfood.jpg",
+      "isSelected": false,
+    },
+    {
+      "name": "Europe",
+      'heading': "Food",
+      'image': "assets/images/eurpeanfood.jpg",
+      "isSelected": false,
+    },
+    {
+      "name": "America",
+      'heading': "Food",
+      'image': "assets/images/american fod.jpg",
+      "isSelected": false,
+    },
+    {
+      "name": "Invention",
+      'heading': "Science & Technology",
+      'image': "assets/images/meidcine.jpg",
+      "isSelected": false,
+    },
+    {
+      "name": "Medicine",
+      'heading': "Science & Technology",
+      'image': "assets/images/meidcine.jpg",
       "isSelected": false,
     },
   ];
