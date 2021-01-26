@@ -100,18 +100,19 @@ class _HomeScreenFavState extends State<HomeScreenFav> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(left: 50.0, top: 22),
+                            padding: const EdgeInsets.only(left: 40.0, top: 22),
                             child: Container(
-                              width: 110,
+                              width: 120,
+                              height: 50,
                               decoration: BoxDecoration(
                                   color: _.isContinueSelection
-                                      ? Colors.orange
+                                      ? Color(0xFFF67D53)
                                       : Colors.grey,
-                                  borderRadius: BorderRadius.circular(20)),
+                                  borderRadius: BorderRadius.circular(30)),
                               child: Row(
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.all(2.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: Text(
                                       "Continue",
                                       style: TextStyle(
