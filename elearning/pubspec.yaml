@@ -43,6 +43,7 @@ dev_dependencies:
   flutter_carousel_slider: ^1.0.2
   get: ^3.23.1
   flutter_rating_bar: ^3.2.0+1
+  percent_indicator: ^2.1.9
     
 
 # For information on the generic Dart part of this file, see the

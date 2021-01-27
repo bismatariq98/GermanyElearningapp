@@ -101,7 +101,8 @@ class _HomeScreenFavState extends State<HomeScreenFav> {
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 40.0, top: 22),
-                            child: Container(
+                            child: 
+                            Container(
                               width: 120,
                               height: 50,
                               decoration: BoxDecoration(
