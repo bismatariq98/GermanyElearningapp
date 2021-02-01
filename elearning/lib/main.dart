@@ -6,6 +6,8 @@ import 'package:get/get.dart';
 import 'package:elearning/Screens/Login/components/RoadMapNew.dart';
 import 'package:elearning/Screens/Login/components/HomeScreenFav.dart';
 import 'package:elearning/Screens/Login/components/lessonScreen.dart';
+import 'package:elearning/Screens/Login/components/quizScreen.dart';
+
 // import 'package:elearning/Screens/Login/components/HomeScreenKatherine.dart';
 
 void main() => runApp(MyApp());
@@ -26,10 +28,11 @@ class MyApp extends StatelessWidget {
       // home: HomeScreen(),
       // home: roadMap(),
       // home: roadMapNew(),
+      home: QuizScreen(),
 /* -------------------------------------------------------------------------- */
 /*                                    start                                   */
 /* -------------------------------------------------------------------------- */
-      home: lessonScreen(),
+      // home: lessonScreen(),
       // home: HomeScreenFav(),
       // home: Animations(),
       // home: SubCategory(),
