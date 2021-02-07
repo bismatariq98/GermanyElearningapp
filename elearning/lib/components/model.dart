@@ -24,6 +24,11 @@ class Category {
   Category({this.image, this.isSelected, this.name, this.heading});
 }
 
+class Spell {
+  final String name;
+  Spell({this.name});
+}
+
 // List<String> jnab = [
 //   'News',
 //   'Entertainment',

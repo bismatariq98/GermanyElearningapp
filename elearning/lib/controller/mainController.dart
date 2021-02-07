@@ -2,6 +2,7 @@ import 'package:elearning/components/model.dart';
 import 'package:get/get.dart';
 
 class MainController extends GetxController {
+  String chnage = "bisma";
   // List<String> userHeading = [];
   List<String> userCategory = [];
   List<Category> subCategory = [];
@@ -214,6 +215,12 @@ class MainController extends GetxController {
     update();
   }
 
+  List<Spell> spelling = [
+    Spell(name: "Dog"),
+    Spell(name: "Monkey"),
+    Spell(name: "Camel"),
+    Spell(name: "Cat"),
+  ];
   var categoriesDataThree = [
     {
       "isSelected": false,
