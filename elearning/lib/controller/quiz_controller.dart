@@ -8,22 +8,45 @@ class QuizController extends GetxController {
   //function bnao na yar check color ka
   bool isComplete = false;
   bool isChecked = false;
+  bool isCorrect = false;
+  bool isWrong = false;
+  String btnLabel = 'Chose Letter';
+  Color btnColor = Colors.grey;
   Color topCntainer = Colors.grey;
   checkAnswer() {
     isChecked = true;
     if (inputList.join('') == animalLetterList.join('')) {
       topCntainer = Colors.green;
+      btnLabel = 'Well done, Next';
+      btnColor = Colors.green;
+      isCorrect = true;
     } else {
       topCntainer = Colors.red;
+      isWrong = true;
+
+      btnLabel = 'Try again';
     }
     update();
   }
 
+  repeateQuestion() {
+    isCorrect = false;
+
+    dataAddingFun();
+    isComplete = false;
+    isChecked = false;
+    btnLabel = 'Chose Letter';
+    btnColor = Colors.grey;
+  }
+
   nextQuestion() {
+    isCorrect = false;
     currentIndex++;
     dataAddingFun();
     isComplete = false;
     isChecked = false;
+    btnLabel = 'Chose Letter';
+    btnColor = Colors.grey;
   }
 
   upperColor() {
@@ -85,7 +108,9 @@ class QuizController extends GetxController {
     }
     inputList[currentPosition] = letter;
     if (inputList[inputList.length - 1] != "") {
-      isComplete = true;
+      // isComplete = true;
+      btnLabel = 'Check';
+      btnColor = Colors.blue;
       update();
       //?
       // currentIndex++;

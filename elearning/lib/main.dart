@@ -7,6 +7,7 @@ import 'package:elearning/Screens/Login/components/RoadMapNew.dart';
 import 'package:elearning/Screens/Login/components/HomeScreenFav.dart';
 import 'package:elearning/Screens/Login/components/lessonScreen.dart';
 import 'package:elearning/Screens/Login/components/quizScreen.dart';
+import 'package:elearning/Screens/Login/login_screen.dart';
 
 // import 'package:elearning/Screens/Login/components/HomeScreenKatherine.dart';
 
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: WelcomeScreen(),
       // home: HomeScreen(),
+      // home: LoginScreen()
       // home: HomeScreen(),
       // home: roadMap(),
       // home: roadMapNew(),

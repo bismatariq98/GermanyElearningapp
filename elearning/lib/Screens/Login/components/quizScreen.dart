@@ -162,35 +162,49 @@ class _QuizScreenState extends State<QuizScreen> {
                         //     }),
                         ),
                   ),
-                  if (_.isComplete)
-                    InkWell(
-                      onTap: () {
-                        if (_.isChecked) {
-                          // code for next page
-                          _.nextQuestion();
-                        } else {
+                  InkWell(
+                    onTap: () {
+                      // if (_.isComplete) {
+                      //   if (_.isChecked) {
+                      //     // code for next page
+                      //     _.nextQuestion();
+                      //   } else {
+                      //     _.checkAnswer();
+                      //   }
+                      // }
+                      switch (_.btnLabel) {
+                        case 'Chose Letter':
+                          break;
+                        case 'Check':
                           _.checkAnswer();
-                        }
-                      },
-                      child: Center(
-                        child: Padding(
-                          padding: const EdgeInsets.only(top: 68.0),
-                          child: Container(
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(12),
-                                color: Color(0xFFFF6D94)),
-                            height: 50,
-                            width: 170,
-                            child: Center(
-                                child: Text(
-                              _.isChecked ? 'Next' : 'Check',
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 24),
-                            )),
+                          break;
+                        case 'Well done, Next':
+                          _.nextQuestion();
+                          break;
+                        case 'Try again':
+                          _.repeateQuestion();
+                          break;
+                      }
+                    },
+                    child: Center(
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 68.0),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            color: _.btnColor,
                           ),
+                          height: 50,
+                          width: 170,
+                          child: Center(
+                              child: Text(
+                            _.btnLabel,
+                            style: TextStyle(color: Colors.white, fontSize: 24),
+                          )),
                         ),
                       ),
-                    )
+                    ),
+                  ),
                 ],
               ),
             ),
