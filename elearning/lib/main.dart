@@ -1,3 +1,5 @@
+import 'package:elearning/Screens/Login/components/HomeScreen.dart';
+import 'package:elearning/Screens/Login/components/language.dart';
 import 'package:flutter/material.dart';
 import 'package:elearning/Screens/Welcome/welcome_screen.dart';
 import 'package:elearning/constants.dart';
@@ -8,10 +10,16 @@ import 'package:elearning/Screens/Login/components/HomeScreenFav.dart';
 import 'package:elearning/Screens/Login/components/lessonScreen.dart';
 import 'package:elearning/Screens/Login/components/quizScreen.dart';
 import 'package:elearning/Screens/Login/login_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 // import 'package:elearning/Screens/Login/components/HomeScreenKatherine.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -26,16 +34,17 @@ class MyApp extends StatelessWidget {
       ),
       // home: WelcomeScreen(),
       // home: HomeScreen(),
-      // home: LoginScreen()
+      // home: LoginScreen().
+      // home: Language(),
       // home: HomeScreen(),
       // home: roadMap(),
       // home: roadMapNew(),
-      home: QuizScreen(),
+      // home: QuizScreen(),
 /* -------------------------------------------------------------------------- */
 /*                                    start                                   */
 /* -------------------------------------------------------------------------- */
       // home: lessonScreen(),
-      // home: HomeScreenFav(),
+      home: HomeScreenFav(),
       // home: Animations(),
       // home: SubCategory(),
       // home: BottomNav(),
