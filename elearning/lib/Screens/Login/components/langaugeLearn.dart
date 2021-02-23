@@ -8,20 +8,21 @@ import 'package:elearning/localization/language/languages.dart';
 import 'package:elearning/localization/locale_constant.dart';
 import 'package:elearning/model/language_data.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:elearning/Screens/Login/components/langaugeLearn.dart';
 
-class Language extends StatefulWidget {
+class LanguageLearn extends StatefulWidget {
   @override
-  _LanguageState createState() => _LanguageState();
+  _LanguageLearnState createState() => _LanguageLearnState();
 }
 
-class _LanguageState extends State<Language> {
+class _LanguageLearnState extends State<LanguageLearn> {
   MainController mainController = Get.put(MainController());
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: _createLanguageDropDown()),
+      appBar: AppBar(
+        title: Text("Choose Langauge"),
+      ),
       body: GetBuilder<MainController>(
         builder: (_) {
           return Container(
@@ -35,15 +36,14 @@ class _LanguageState extends State<Language> {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 28.0),
                       child: Text(
-                        "Which Language do you speak the best ?",
-                        // Languages.of(context).appName,
+                        // "Which Language do you speak the best ?",
+                        "Select Langauge you want to learn ",
                         style: TextStyle(
-                            fontSize: 30, fontWeight: FontWeight.bold),
+                            fontSize: 23, fontWeight: FontWeight.bold),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 24.0, vertical: 8.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 24.0),
                       child: Container(
                         height: 490,
                         width: Get.width,
@@ -128,15 +128,10 @@ class _LanguageState extends State<Language> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            GestureDetector(
-                              onTap: () {
-                                Get.to(LanguageLearn());
-                              },
-                              child: Text(
-                                "Next",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 25),
-                              ),
+                            Text(
+                              "Next",
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 25),
                             ),
                             Icon(
                               Icons.forward,

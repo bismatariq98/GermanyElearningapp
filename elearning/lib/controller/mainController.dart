@@ -1,7 +1,14 @@
 import 'package:elearning/components/model.dart';
 import 'package:get/get.dart';
+import 'package:elearning/Screens/Login/components/language.dart';
 
 class MainController extends GetxController {
+  int ijk = -1;
+  tick(int i) {
+    ijk = i;
+    update();
+  }
+
   String chnage = "bisma";
   // List<String> userHeading = [];
   List<String> userCategory = [];
