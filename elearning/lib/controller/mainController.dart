@@ -1,13 +1,23 @@
+import 'package:elearning/Models/langaugeModel.dart';
 import 'package:elearning/components/model.dart';
 import 'package:get/get.dart';
 import 'package:elearning/Screens/Login/components/language.dart';
 
 class MainController extends GetxController {
+  // ya 2nd screen
+  int languagelearn = -1;
+  LangaugeLearnTick(int i) {
+    languagelearn = i;
+    update();
+  }
+
   int ijk = -1;
   tick(int i) {
     ijk = i;
     update();
   }
+
+  String langaugeSelection = '';
 
   String chnage = "bisma";
   // List<String> userHeading = [];

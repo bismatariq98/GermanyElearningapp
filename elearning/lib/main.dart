@@ -60,7 +60,23 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       locale: _locale,
-      supportedLocales: [Locale('en', ''), Locale('ar', ''), Locale('hi', '')],
+      supportedLocales: [
+        Locale('en', ''),
+        Locale('ar', ''),
+        Locale('hi', ''),
+        Locale('fr', ''),
+        Locale('gr', ''),
+        Locale('kr', ''),
+        Locale('chs', ''),
+        // Locale('cht', ''),
+        Locale('ur', ''),
+        Locale('th', ''),
+        Locale('sp', ''),
+        Locale('it', ''),
+        Locale('jp', ''),
+        Locale('ml', ''),
+        Locale('rs', '')
+      ],
       localizationsDelegates: [
         AppLocalizationsDelegate(),
         GlobalMaterialLocalizations.delegate,

@@ -1,17 +1,17 @@
 import 'languages.dart';
 
-class LanguageAr extends Languages {
+class LanguagechS extends Languages {
   @override
-  String get appName => "متعدد اللغات";
+  String get appName => "您最会说哪种语言?";
 
   @override
-  String get languageLearn => "أهلا بك";
+  String get languageLearn => "您想学习哪种语言 ?";
 
   @override
   String get labelSelectLanguage => "اختار اللغة";
 
   @override
-  String get labelInfo => "هذا هو التطبيق التجريبي متعدد اللغات";
+  String get labelInfo => "继续";
   @override
   String get langaugeLearn => "هذا هو التطبيق التجريبي متعدد اللغات";
 }

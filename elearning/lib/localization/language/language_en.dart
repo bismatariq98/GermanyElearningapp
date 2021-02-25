@@ -2,14 +2,16 @@ import 'languages.dart';
 
 class LanguageEn extends Languages {
   @override
-  String get appName => "Multi-languages";
+  String get appName => "Which language do you speak the best ?";
 
   @override
-  String get labelWelcome => "Welcome";
+  String get languageLearn => "Which language do you want to learn ?";
 
   @override
   String get labelSelectLanguage => "Select Language";
 
   @override
-  String get labelInfo => "This is multi-languages demo application";
+  String get labelInfo => "Continue";
+  @override
+  String get langaugeLearn => "Select Langauge you want to learn ";
 }

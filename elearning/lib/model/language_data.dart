@@ -9,9 +9,10 @@ class LanguageData {
 
   static List<LanguageData> languageList() {
     return <LanguageData>[
-      LanguageData("🇺🇸", "English", 'en'),
-      LanguageData("🇸🇦", "اَلْعَرَبِيَّةُ‎", "ar"),
-      LanguageData("🇮🇳", "हिंदी", 'hi'),
+      LanguageData("assets/images/british.png", "English", 'en'),
+      LanguageData("assets/images/british.png", "اَلْعَرَبِيَّةُ‎", "ar"),
+      LanguageData("assets/images/british.png", "हिंदी", 'hi'),
+      LanguageData("assets/images/british.png", "", 'hi'),
     ];
   }
 }
